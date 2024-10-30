@@ -152,7 +152,7 @@
     <script async>
         document.addEventListener("DOMContentLoaded", function () {
             // Fetch products from the server
-            fetch('http://localhost:5000/api/products')
+            fetch('https://foodiehub-vrsq.onrender.com/api/products')
                 .then(response => response.json())
                 .then(products => {
                     let carouselItems = document.getElementById('carousel-items');
