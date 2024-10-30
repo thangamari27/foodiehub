@@ -1,0 +1,238 @@
+:root{
+    --primary-color:orange;
+    --secondary-color: #232323;
+    --bg-color:whitesmoke;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Topbar for promotion */
+.top-bar {
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar-brand{
+    color: var(--secondary-color) !important;
+    font-size: 1.5rem;
+    font-weight: 600 !important;
+}
+.navbar-brand:hover{
+    color: var(--primary-color) !important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+.navbar-nav .nav-link {
+    padding-left: 10px;
+    color: var(--secondary-color) !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+  background-color: var(--bg-light);
+  border-radius: 10px;
+}
+
+.header {
+    background-color: #e0e0e0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.header img {
+    max-width: 200px;
+}
+
+.typed-animation > h1 {
+    font-size: 32px;
+    width: 0;
+    border-right: 2px solid orange !important;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typed steps(20,end) forwards infinite 6s ;
+}
+
+@keyframes typed{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 25rem;
+    }
+}
+.discover-btn {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.categories {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 30px;
+    background-color: var(--primary-color);
+}
+
+.categories div {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    width: 45%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.categories div > img{
+    object-fit: cover;
+    transition: all 1s ease;
+}
+.categories div > img:hover{
+    scale: 1.5;
+}
+
+.products-carousel {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.products-carousel img {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.products-carousel .product-title {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.subscribe-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: var(--secondary-color);
+    
+}
+.subscribe-section > h3{
+    color: #fff;
+}
+.subscribe-section > p{
+    color: #fff;
+}
+
+.subscribe-section .icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+.subscribe-section .icons div {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-carousel-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+.footer > .container > p{
+    color: #fff;
+    font-size: 1rem;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+.footer ul li a {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* Customization */
+.btn-dark {
+    background-color: black !important;
+    color: white;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid orange;
+}
+
+@media (max-width:991px) {
+    .nav-item:hover{
+        border-left: 8px solid #232323;
+        background-color: #e0e0e0;
+    }
+}
+@media (max-width:395px) {
+    .typed-animation > h1 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }   
+    @keyframes typed{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 18rem;
+        }
+    }
+}
+
+#p1,#p2,#p3,#p4,#p5{
+    animation: side-an 2s ease;
+}
+
+@keyframes side-an{
+    0%{
+        scale: 0.6;
+        opacity: 0;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}
