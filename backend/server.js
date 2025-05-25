@@ -7,10 +7,10 @@ app.use(cors()); // Enable CORS
 
 // Create connection to MySQL database
 const db = mysql.createConnection({
-    host: 'bges74etvhdy50hdhw3u-mysql.services.clever-cloud.com',  // Change this to your MySQL host
-    user: 'ujga2rwk1ljwyjyx',       // Your MySQL user
-    password: 'd8xW3zx8L2Pdw3ap0SXG',       // Your MySQL password
-    database: 'bges74etvhdy50hdhw3u',
+    host: 'b30vluse77gtkf68llqq-mysql.services.clever-cloud.com',  // Change this to your MySQL host
+    user: 'ucdfju9k8uohzyrk',       // Your MySQL user
+    password: 'xgwhkYgaGM703AVxa5Pt',       // Your MySQL password
+    database: 'b30vluse77gtkf68llqq',
     port: 3306 // Your MySQL database name
 });
 
